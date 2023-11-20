@@ -1,3 +1,3 @@
-# React app to autocomplete input from array
+# AUTOCOMPLETE App
 
-task provided by bit.lt
+REACT App to show autocomplete as li items at DOM. Task provided by bit.lt
