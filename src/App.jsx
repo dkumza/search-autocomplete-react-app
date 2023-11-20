@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Input from "./components/Input";
 import AutoComplete from "./components/Autocomplete";
+import Header from "./components/Header";
 
 import "./App.css";
 
@@ -18,10 +19,11 @@ function App() {
       city.toLowerCase().includes(value.toLowerCase())
    );
    return (
-      <>
+      <div className="flex flex-col items-center py-12">
+         <Header />
          <Input onChange={handleChange} />
          {value && <AutoComplete cities={filteredResult} />}
-      </>
+      </div>
    );
 }
 
