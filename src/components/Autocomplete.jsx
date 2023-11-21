@@ -1,6 +1,7 @@
 export default function autoComplete({ cities, clicked }) {
    return (
       <ul className=" flex flex-col w-full divide-y">
+         {/* from cities props display li ele to DOM */}
          {cities.map((city, index) => (
             <li
                // on click return city value

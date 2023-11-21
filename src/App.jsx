@@ -37,6 +37,7 @@ function App() {
          <Input value={value} onChange={handleChange} />
          {/* if all values are TRUE, display component, and if component is clicked - passes props to component */}
          {showAutoComplete && value && (
+            // passes props of filtered cities result
             <AutoComplete cities={filteredResult} clicked={handleClick} />
          )}
       </div>
